@@ -19,7 +19,12 @@ Ce dépôt contient la solution de l'activité pratique axée sur une applicatio
 
 | Utilisateur 1 | Utilisateur 1 | Serveur |
 |---|---|---|
-| ![Utilisateur 1](./captures/user1.png) | ![Utilisateur 2](./captures/user2.png) | ![Serveur](./captures/server.png) |
+| ![Utilisateur 1](./captures/user1.png) | ![Utilisateur 2](./captures/user2.png) | ![Serveur](./captures/disconnect.png) |
+
+
+| Conversation | Username 1 | Username 2 |
+|---|---|---|
+| ![Utilisateur 1](./captures/conversation.png) | ![Username 1](./captures/username1.png) | ![UserName 2](./captures/username2.png) |
 
  <hr>
  
