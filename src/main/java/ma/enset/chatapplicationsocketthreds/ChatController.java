@@ -44,7 +44,7 @@ public class ChatController {
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             pw = new PrintWriter(socket.getOutputStream(), true);
 
-            pw.println(username); // Send username to server
+            pw.println(username);
 
             new Thread(() -> {
                 try {

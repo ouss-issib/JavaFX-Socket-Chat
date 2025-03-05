@@ -18,13 +18,13 @@ public class ChatApplication extends Application {
 
         // Setup User 1 Window
         Stage user1Stage = new Stage();
-        user1Stage.setTitle("Profile -> Issib Oussama");
+        user1Stage.setTitle("Profile -> Bissi Oussama");
         user1Stage.setScene(user1Scene);
         user1Stage.show();
 
         // Setup User 2 Window
         Stage user2Stage = new Stage();
-        user2Stage.setTitle("Profile -> Zouita Salah");
+        user2Stage.setTitle("Profile -> Zouitni Salah");
         user2Stage.setScene(user2Scene);
         user2Stage.show();
     }

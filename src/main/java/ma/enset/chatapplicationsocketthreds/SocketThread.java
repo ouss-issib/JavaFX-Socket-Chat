@@ -25,25 +25,21 @@ public class SocketThread extends Thread {
             // Read username from client
             username = br.readLine();
             System.out.println(username + " has joined the chat.");
-            broadcastMessage("🟢 " + username + " has joined the chat.");
+            broadcastMessage("🟢 " + username + " a rejoint la conversation.");
 
             String msg;
             while ((msg = br.readLine()) != null) {
+                if (msg.equalsIgnoreCase("bye")) {
+                    broadcastMessage("🔴 " + username + " a quitté la conversation.");
+                    break;
+                }
                 System.out.println(username + ": " + msg);
                 broadcastMessage(username + ": " + msg);
             }
         } catch (IOException e) {
             System.out.println(username + " disconnected.");
         } finally {
-            try {
-                if (br != null) br.close();
-                if (pw != null) pw.close();
-                if (socket != null) socket.close();
-                clients.remove(this);
-                broadcastMessage("🔴 " + username + " has left the chat.");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            closeConnection();
         }
     }
 
@@ -55,9 +51,26 @@ public class SocketThread extends Thread {
 
     private void broadcastMessage(String message) {
         for (SocketThread client : clients) {
-            if (client != this) {  // Don't send the message to the sender
+            if (client != this) {
                 client.sendMessage(message);
             }
+        }
+    }
+
+    private void closeConnection() {
+        try {
+            if (br != null) br.close();
+            if (pw != null) pw.close();
+            if (socket != null) socket.close();
+            clients.remove(this);
+
+            // If no users are left, stop the server
+            if (clients.isEmpty()) {
+                System.out.println("Tous les utilisateurs sont déconnectés. Fermeture du serveur...");
+                System.exit(0);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

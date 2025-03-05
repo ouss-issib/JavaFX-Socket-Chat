@@ -5,6 +5,6 @@
     <TextArea fx:id="chatArea" editable="false" prefHeight="300"/>
     <HBox spacing="10">
         <TextField fx:id="messageField" promptText="Type your message here..."/>
-        <Button text="Send" onAction="#sendMessage"/>
+        <Button text="Send" styleClass="btn-primary" onAction="#sendMessage"/>
     </HBox>
 </VBox>
