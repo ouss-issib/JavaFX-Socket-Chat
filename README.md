@@ -35,7 +35,7 @@ Ce dépôt contient la solution de l'activité pratique axée sur une applicatio
    git clone https://github.com/ouss-issib/JavaFX-Socket-Chat.git
 2. Naviguer dans le répertoire du dépôt :
    ```bash
-   cd practical-activity-java-fx
+   cd JavaFX-Socket-Chat
 
 3. Compiler et exécuter les fichiers Java :
    ```bash
