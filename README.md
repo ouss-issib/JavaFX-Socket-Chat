@@ -11,7 +11,7 @@ Ce dépôt contient la solution de l'activité pratique axée sur une applicatio
 - **L'application se compose des éléments suivants :** :
   1. Une classe `SocketThread` Gère l’instance de chaque socket et assure la communication entre les clients et le serveur.
   2. Une classe `ChatServer` Gère le serveur en acceptant plusieurs connexions simultanées et en relayant les messages entre les utilisateurs.
-  2. Créer  vue `product-view` Interface graphique permettant l'envoi et la réception de messages.
+  2. Créer  vue `user1-view` et `user2-view` les Interfaces graphiques permettant l'envoi et la réception de messages.
   3. Créer le controlleur `ChatController` qui Contrôle l'interface utilisateur et répond aux actions des deux utilisateurs.
 - **Résultat Attendu** : Chat application JavaFx entre deux Utilisateurs.
 - **Execution**: 
