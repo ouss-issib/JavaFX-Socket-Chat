@@ -32,8 +32,7 @@ Ce dépôt contient la solution de l'activité pratique axée sur une applicatio
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/ouss-issib/practical-activity-java-fx.git
-
+   git clone https://github.com/ouss-issib/JavaFX-Socket-Chat.git
 2. Naviguer dans le répertoire du dépôt :
    ```bash
    cd practical-activity-java-fx
